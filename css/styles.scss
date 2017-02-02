@@ -1,0 +1,466 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+// Add your styles here
+
+/*!
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+
+//Variables
+
+$primary: #52B1C6;
+$primary-dark: darken($primary, 15%);
+$secondary: #BAC0C1;
+$white: #F1F6F6;
+$light-grey: darken($white, 5%);
+$grey: #BAC0C1;
+$dark-grey: darken($grey, 40%);
+$black: #464239;
+
+$x-small-text: 1rem;
+$small-text: 1.2rem;
+$body-text: 1.4rem;
+$medium-text: 1.7rem;
+$large-text: 2.2rem;
+$x-large-text: 3.2rem;
+
+
+
+/*
+* Base structure
+*/
+
+html {
+  font-size: 15px;
+}
+@media (max-width: 767px) {
+  html { font-size: 12px; }
+}
+
+
+html {
+  height: 100%;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  color: $black;
+  text-align: center;
+  position: relative;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+  text-shadow: none;
+}
+
+h1 {
+  font-family: 'Josefin Slab';
+  font-weight: 600;
+  font-size: $x-large-text;
+  line-height: $x-large-text * 1.2;
+  letter-spacing: -1.8px;
+}
+h2 {
+  font-size: $large-text;
+}
+h3 {
+  font-size: $medium-text;
+}
+h2, h3 {
+  font-family: 'Josefin Sans';
+  font-weight: 300;
+  letter-spacing: -0.7px;
+
+}
+p {
+  font-family: 'Josefin Slab';
+  font-size: $body-text;
+}
+
+a {
+  color: $primary-dark;
+  &:hover {
+    color: $primary-dark;
+  }
+}
+
+ul > li.list, ol > li.list {
+    font-size: $small-text;
+    margin-bottom: 1.1rem;
+}
+ul > li.list {
+  list-style: none;
+  &:before {
+    content: "• ";
+    color: $primary;
+    font-size: $large-text;
+    line-height: $small-text;
+    position: relative;
+    top: 4px;
+    margin-left: -0.7em;
+  }
+}
+
+.small-text {
+  font-size: $x-small-text;
+}
+
+.quote {
+  font-style: italic;
+  color: $dark-grey;
+  display: inline-block;
+  margin: 20px 40px;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.caption {
+  font-style: italic;
+  font-weight: 300;
+  padding-bottom: 0.5rem;
+  margin: 1em 0;
+  display: inline-block;
+}
+
+.pre {
+  font-size: $medium-text;
+  line-height: $medium-text * 1.6;
+  letter-spacing: -0.3px;
+}
+
+.icon {
+  color: $primary;
+  vertical-align: middle;
+}
+.socicon-mail {
+  vertical-align: text-top;
+}
+
+//Buttons
+.btn {
+  font-family: 'Josefin Sans';
+  font-size: $x-small-text;
+  font-weight: 700;
+  border: none;
+  border-radius: 100px;
+  padding: 7px 20px;
+  &.btn-lg {
+    padding-top: 13px;
+  }
+}
+.btn.btn-default {
+  color: $black;
+  background-color: $light-grey;
+  &:hover {
+    background-color: darken($light-grey, 10%);
+    // color: $white;
+    // .icon {
+    //   color: $white;
+    // }
+  }
+}
+.btn.btn-primary {
+  color: $white;
+  background-color: $primary;
+  &:hover {
+    background-color: $primary-dark;
+  }
+}
+
+.btn.btn-ghost {
+  color: $white;
+  background-color: transparent;
+  border: 1px solid $white;
+    &:hover {
+    color: $white;
+    border-color: $primary;
+    background-color: $primary;
+  }
+}
+
+
+/* Nav Bar - small screens */
+@media (max-width: 767px) {
+  .navbar 
+  ul {
+    margin: 0 -15px;
+    li:before {
+      content: none;
+    }
+  }
+  button {
+    border: none;
+    .icon-bar {
+      background-color: $black;
+    }
+  }
+  .navbar a {
+    color: $black;
+  }
+
+  //On home screen the bar is transparent
+  .navbar:not(.top-nav-collapse) {
+    .navbar-header.page-scroll {
+      background-color: transparent;
+    }
+    .navbar-brand {
+      color: $white;
+    }
+    button .icon-bar {
+      background-color: $white;
+    }
+  }
+
+  //Scrolling down the nav bar becomes white
+  .navbar .navbar-collapse, .navbar-header.page-scroll {
+    background-color: rgba($white, 0.95);
+
+    .active {
+      border-bottom: 2px solid $primary;
+      background-color: $white;
+      font-weight: 600;
+    }
+  }
+}
+
+/* Nav Bar - large screens */
+@media (min-width: 767px) {
+  .navbar {
+    padding: 10px 0;
+    background-color: transparent;
+    border-bottom: none;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+    .active {
+      background-color: transparent;
+      :after {
+        content: "";
+        width: 70%;
+        height: 2px;
+        position: absolute;
+        left: 15%;
+        top: 40px;
+        background: $primary;
+        border-radius: 2px;
+      }
+      a {
+        font-weight: 900;
+      }
+    }
+    li>a:hover, li>a:focus {
+      background-color: transparent;
+    }
+    li:hover:not(.active) {
+      :after {
+        content: "";
+        width: 70%;
+        height: 2px;
+        position: absolute;
+        left: 15%;
+        top: 40px;
+        background: rgba($primary, 0.5);
+        border-radius: 2px;
+      }
+    }
+    a {
+      color: $white;
+    }
+  }
+
+  .top-nav-collapse {
+    padding: 0;
+    background-color: rgba($white, 0.95);
+    border-bottom: solid 1px $grey;
+    a {
+      color: $black;
+    }
+  }
+}
+
+//Navbar "brand" eg karin hellman - should look the same on small and large
+.navbar-brand {
+  font-family: 'Josefin Slab', serif;
+}
+
+
+
+/* Content Sections */
+
+.intro-section {
+  height: 100%;
+  text-align: center;
+  -webkit-box-shadow: inset 0 0 400px rgba(0, 0, 0, 1);
+  box-shadow: inset 0 0 400px rgba(0, 0, 0, 1);
+  background-image: url("../imgs/drawings.jpg");
+  background-position: 61% 18%;
+  background-size: 115%;
+
+}
+
+.intro-section-overlay {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.intro-section .row {
+  margin-top: 33vh;
+
+  .cover-heading {
+    color: $white;
+    &.pre {
+      margin: 0;
+    }
+    &#home {
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.projects-section {
+  //height: 100%;
+  padding-top: 40px;
+  text-align: center;
+  background-color: $light-grey;
+
+  .thumbnail {
+    border: none;
+    margin-bottom: 5px;
+    background-color: transparent;
+    &:hover {
+      text-decoration: none;
+      .img-caption {
+        text-decoration: none;
+        color: $primary-dark;
+      }
+      img {
+        border: 3px solid $primary;
+      }
+    }
+    img {
+      border-radius: 1000px;
+      transition: all .1s ease-in-out;
+      border: 3px solid $white;
+    }
+    .img-caption {
+      margin-bottom: 40px;
+      color: $black;
+    }
+  }
+}
+
+.contact-section {
+  padding: 10% 0;
+  text-align: center;
+  background-color: $black;
+  //height: 100%;
+  color: $white;
+  img {
+    border-radius: 400px;
+    width: 65%;
+    border: 3px solid $white;
+
+  }
+  .contact-methods {
+    margin-top: 20px;
+    .btn {
+      margin: 0 1em;
+    }
+  }
+}
+
+
+//Projects Page///
+
+.project-header {
+  img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    min-height: 50px;
+  }
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.project-content {
+  text-align: left;
+  margin-top: 10%;
+  .container {
+    max-width: 900px;
+  }
+  h2 {
+    font-weight: 600;
+  }
+  h3 {
+    font-size: $body-text;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 0.7rem;
+    &:before {
+      width: 2px;
+      height: $body-text;
+      background-color: $primary;
+      content: "";
+      position: absolute;
+      margin-top: -0.1rem;
+      margin-right: 0.1rem; 
+      left: 16px;
+      border-radius: 2px;
+    }
+  }
+  img {
+    width: 100%;
+    border: 1px solid $light-grey;
+    margin-top: 20px;
+  }
+
+  .customer-quotes {
+    padding-bottom: 1.5em;
+//    display: inline-block;
+    .col-md-4 {
+      padding-bottom: 1.5em;
+    }
+
+    @media (min-width: 992px) {
+      .quote {
+        min-height: 150px;
+      }
+    }
+    .quote {
+      font-size: $body-text;
+      color: $dark-grey;
+      display: block;
+      width: 100%;
+      margin: 1.5em .5em 0 .5em;
+    }
+    .caption {
+      float: right;
+      font-style: normal;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .video {
+    text-align: center;
+  }
+
+  .btn {
+    margin: 10% 0;
+    &.next {
+        float: right;
+    }
+  }
+}
+
+

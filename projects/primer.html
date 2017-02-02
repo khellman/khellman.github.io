@@ -1,0 +1,167 @@
+---
+layout: project
+project_title: Primer
+next_project: data_lens
+prev_project: plan_of_the_day
+permalink: projects/primer/
+---
+
+
+    <div class="row">
+      
+      <div class="col-md-6">
+        <h3>Summary</h3>
+        <p>When users visit a Socrata-powered data portal, the most essential page is the experience that represents the data itself. Previously, this was a cluttered spreadsheet view that provided little context about what users were looking at. Primer was an effort to design a landing page that lends itself better to the actual end users of our product by describing what the dataset contains and what it can be used for.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="../../imgs/primer/Landingpage Responsive Showcase.png" alt="Primer"/>
+        <span class="caption">Primer - the dataset landing page</span>
+      </div>
+    </div> <!-- /row -->
+
+    <div class="row">      
+      <div class="col-md-12">
+        <h3>My Role</h3>
+        <p>I worked as the lead designer on a cross functional team tasked with identifying the issues with the current dataset page, and designing a better solution. I was responsible for outlining the problem definition, creating wireframes, final visual designs, and creating the backlog of development tasks and requirements. I worked collaboratively with developers, product managers, and executives to plan and deliver the product from start to finish.</p>
+      </div>
+      <div class="col-md-12">       
+        <h3>Background</h3>
+        <p>The majority of Socrata’s business centers around helping governments publish public data to the web in the form of interactive datasets. The notion of a dataset has been around for as long as the company has, circa 2007, and the design of the interactive dataset page has changed little since then.</p>
+        <img src="../../imgs/primer/911_incidents_dataset_seattle.png" alt="911 Incidents Dataset from City of Seattle's data portal"/>
+        <span class="caption">An example of the old dataset page from <a href="https://data.seattle.gov/">City of Seattle’s open data portal</a></span>
+      </div>
+      
+      <div class="col-md-12">
+        <p>The old design and implementation has several issues:
+          <ul>
+            <li class="list">The page is overwhelming and does not have a clear call to action</li>
+            <li class="list">The visual design is extremely outdated</li>
+            <li class="list">The performance of the page is extremely poor, especially for large datasets</li>
+            <li class="list">It’s barely useable on a mobile device</li>
+            <li class="list">Our competitors provide more attractive and usable options for the same feature set</li>
+          </ul>
+        </p>
+      </div>
+      
+      <div class="col-md-12">
+        <p>Another issue with the dataset page is that the range of people and use cases it’s trying to serve is way too broad. For example: it’s expected that a government employee can use the dataset page to create a chart or graph, a civic minded developer should be able to find an API endpoint to use for his latest project, and a small business owner should easily be able to figure out if her business permit got approved or not. Right now, all of these people are directed to the same page. This resulted in an inefficient interface that served none of our core users particularly well, as it’s not being optimized for any particular persona.</p>
+      </div>
+    </div> <!-- /row -->
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Problem Definition & Goals</h3>
+        <p>Using previous research conducted by our user research team, we knew that the users that typically visit our customer sites are roughly distributed in the following way:</p>
+      </div>
+      <div class="col-md-6">
+          <ul>
+            <li class="list">~25% are there to do some sort of deeper analysis</li>
+            <li class="list">~30% are trying to find an answer to a question</li>
+            <li class="list">~40% want to explore what data is available to them</li>
+            <li class="list">~5% are what we call supporters - <span class="small-text">this includes government employees that publish the data, as well as developers that use data via API to develop apps or websites</span></li>
+          </ul>
+        </p>
+      </div>
+      <div class="col-md-6">
+         <img src="../../imgs/primer/distribution of users.png" alt="Data from previous research: The approximate distribution of users and their main activity"/>
+        <span class="caption">Data from previous research: The approximate distribution of users and their main activity</a></span>
+      </div>
+    </div> <!-- /row -->
+
+    <div clas="row">
+      <div class="col-md-12">
+        <p>Through this research I recognized that there were a wide variety of use cases that needed to be accounted for, but needed to design a solution that did not fall in the trap of the old page, where one page was trying to be the final destination for all. I decided to strive to make the page less of a destination, and more of a stop along the way. This decision provided the basis for the project objective that I communicated across teams and leadership:
+          <p>
+            <span class="quote">"Build a central page that serves as an <strong>introduction and hub</strong> for interacting with a dataset that clearly tells the user that they are on the right path. The page provides a <strong>curated view of all information about the dataset</strong>, brings together child and related assets—such as visualizations, stories, similar datasets, apps, and external resources—, and <strong>guides the users to primary actions</strong> that help them get value from the data.”</span>
+          </p>
+        </p>
+        <p>At this point I ran several design and project reviews with the research team, product leadership, and the rest of the design team, weighing user needs with features that would be good for the business; e.g. focusing on finders that are a large portion of the user base, but will potentially never come back after finding what they are looking for vs analyzers and supporters that "enrich" the platform with things they create. I finally landed on the following questions that people using the new landing page needed to be able to answer, in priority order:</p>
+        <p>
+          <ol>
+            <li class="list"><strong>Is this the right data?</strong> - Help users quickly determine if data is valuable to them, based on the criteria they have (e.g. covers the relevant <strong>subject</strong> and contains the right <strong>content</strong>)</li>
+            <li class="list"><strong>How do I do something with the data?</strong> - Show users next steps and calls to action, and send them deeper into the site or off the site (with a goal of returning later)</li>
+            <li class="list"><strong>What’s this data used for right now?</strong> What can it tell me? Show users what people are doing with the data, as well as the relevant and valuable assets that are available, and send them deeper into the site</li>
+          </ol>
+        </p>
+      </div>
+
+      <div class="col-md-12">
+      <h3>Initial Design</h3>
+        <p>After clearly defining problems and goals, the next step was to understand the flow between the new dataset landing page and other parts of the product. This proved to be a bit of a challenge as Socrata’s information architecture has incurred quite a bit of design debt over the years. I created several wireframes and flows before coming up with a viable solution.</p>
+      </div>
+      
+      <div class="col-md-6">
+        <img src="../../imgs/primer/architecture_sketches.png" alt="Initial flows between the dataset landing page and other parts of the product"/>
+        <span class="caption">Initial flows between the dataset landing page and other parts of the product</span>
+      </div>
+      <div class="col-md-6">
+        <img src="../../imgs/primer/architecture_wires.png" alt="The refined flow was used as an artifact in broader conversations"/>
+        <span class="caption">The refined flow was used as an artifact in broader conversations
+        </span>
+      </div>
+
+      <div class="col-md-12">
+        <p>In order to get started on the page design, I took inventory of all the essential pieces of information on the old page, and added to the list any information needed to the user questions we identified during the design process.</p>
+        <p>In collaboration with members of our design and research team I then prioritized the importance of each piece of information, and used this to inform the visual hierarchy of the page.</p>
+        <img src="../../imgs/primer/UI_initial_sketches.jpg" alt="Initial sketches for layouts, trying to think mobile first"/>
+        <span class="caption">Initial thoughts on layouts, trying to think mobile first</span>
+        <p>After a few iterations on paper, it was clear that I needed higher fidelity to ensure the hierarchy of information corresponded to our defined questions. For example, for people to be able to answer the question “Is this the right data?” I made sure that the title and description carried the most visual weight, but I also included a section that was called “What’s in this dataset” that lists each column with a description. This makes it easy to at a glance see if this data will contain the information you’re looking for.</p>
+        <img src="../../imgs/primer/primer_mockup.png" alt="Starting with black and white low fidelity mockups to get the visual hierarchy right"/>
+        <span class="caption">Starting with black and white low fidelity mockups to get the visual hierarchy right</span>
+        <p>After many iterations and internal design reviews, I picked what I thought was the best one so far, and got on the phone with customers. Having gone digital here really helped, as most of our customers aren’t local to Seattle, and doing a screenshare is the quickest and cheapest way to get some feedback.</p>
+        <p>After an initial round of customer feedback, it turned out that the ability to customize content on the page was hugely important to customers, as well as being able to hide metadata that wasn’t filled out.</p>
+      </div>
+
+      <div class="col-md-12">
+        <h3>High Fidelity Design</h3>
+        <p>With the changes from the customer feedback sessions incorporated, my high fidelity designs ended up touching on the goals of answering peoples' questions in the following way:
+          <ol>
+            <li class="list"><strong>Is this the right data?</strong> - Prominent title and description, about section with all relevant metadata, summary of columns with descriptions, preview of data table or map features.</li>
+            <li class="list"><strong>How do I do something with the data?</strong> - Key frequent actions, readily available on the top right for easy and quick access for the repeat user, but not too prominent as they cater to a smaller part of the audience. Call to action next to table to explore further.</li>
+            <li class="list"><strong>What’s this data used for right now?</strong> Featured content related to the data customizable by the customer, prominent and visually engaging, but with the customer in full control of the content. More automatically related content further down the page.</li>
+          </ol>
+        </p>
+
+        <img src="../../imgs/primer/primer_hifi_mock.png" alt="Full fidelity mockup of Primer"/>
+        <span class="caption">Full fidelity version of the Primer page - made using HTML and CSS</span>
+      </div>
+
+      <div class="col-md-12">
+        <h3>Development</h3>
+        <p>Developing this feature was a lot of fun. In place of high fidelity mockups, I created a responsive, interactive prototype using HTML, CSS and JavaScript, to show the visual design and behaviors of each feature. The engineers on the team exclusively used the prototype complimented by written acceptance criteria as their specifications. This really minimized the time we spent on correcting the regular little things that come up, such as font sizes, margins and paddings, as it was all available in the browser for them to inspect.</p>
+
+        <div class="video embed-responsive embed-responsive-16by9"> 
+          <iframe src="https://player.vimeo.com/video/201804269?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <span class="caption">Here is an example from my prototype featuring the flow for adding content to a landing page</span>
+
+        <p>One of the most challenging parts of the development phase was that we had to deal with the fact that all the data in our customers’ datasets is spread across two significantly different backends. Because of this, we had to develop one feature with two different ways of retrieving data. For example, in one backend, a column could be represented as a number, while in the other it was represented as currency. This meant that we had to consider each feature with the technical requirements of both systems, and sometimes compromise in favor of consistency between the two.</p>
+      </div>
+
+      <div class="col-md-12">
+        <h3>Results</h3>
+        <p>The new dataset landing pages, which we called Primer, shipped to over 200 of our customers to widespread positive reactions.</p>
+
+        <div class="customer-quotes">
+          <div class="col-md-4">
+            <span class="quote">“On these new landing pages - I am ecstatic that you have implemented them. All the relevant info at-a-glance! This is SO very cool.”</span> 
+            <span class="caption">- Colorado State</span>
+          </div>
+          <div class="col-md-4">
+            <span class="quote">“These changes, along with previous ones such as the updated catalog search, have greatly improved our resident’s user experience!”</span>
+            <span class="caption">- Kansas City Missouri</span>
+          </div>
+          <div class="col-md-4">
+            <span class="quote">“I like the Featured Content area very much! Nice work!”</span> 
+            <span class="caption">- New York State</span>
+          </div>
+
+        </div>
+
+        <img src="../../imgs/primer/911_incidents_primer_seattle.png" alt="Final Primer"/>
+        <span class="caption">An example of the new Primer page from <a href="https://data.seattle.gov/">City of Seattle’s open data portal</a></span>
+      </div>
+
+
+
+  </div> <!-- /row -->

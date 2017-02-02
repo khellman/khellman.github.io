@@ -1,0 +1,30 @@
+---
+layout: header
+links: /
+---
+
+ 
+<section class="project-header">
+  <div class="container">
+  	<img src="../../imgs/project_header.png" alt="{{page.project_title}}">
+  </div>
+</section>
+<section id="{{page.project_title}}" class="project-content">
+  <div class="container">
+    <div class="row">
+	    <div class="col-md-12"><h1>{{page.project_title}}</h1></div>
+    </div>
+		{{ content }}    
+	  <p>
+			<a href="../../projects/{{page.prev_project}}" class="btn btn-lg btn-default prev">
+				<span class="glyphicon glyphicon-menu-left"></span>
+				Previous Project
+			</a>
+			<a href="../../projects/{{page.next_project}}" class="btn btn-lg btn-primary next">
+				Next Project
+				<span class="glyphicon glyphicon-menu-right"></span>
+			</a>
+	  </p>
+  </div>
+
+</section>
