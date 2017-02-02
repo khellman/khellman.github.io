@@ -436,6 +436,9 @@ ul > li.list {
       .quote {
         min-height: 150px;
       }
+      .quote.short {
+        min-height: 95px;
+      }
     }
     .quote {
       font-size: $body-text;

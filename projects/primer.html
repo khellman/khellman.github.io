@@ -11,7 +11,7 @@ permalink: projects/primer/
       
       <div class="col-md-6">
         <h3>Summary</h3>
-        <p>When users visit a Socrata-powered data portal, the most essential page is the experience that represents the data itself. Previously, this was a cluttered spreadsheet view that provided little context about what users were looking at. Primer was an effort to design a landing page that lends itself better to the actual end users of our product by describing what the dataset contains and what it can be used for.</p>
+        <p>When users visit a Socrata-powered data portal, the most essential page is the experience that represents the data itself. Previously, this was a cluttered spreadsheet view that provided little context about what users were looking at. Primer was an effort to design a landing page that lends itself better to the actual end users of the product by describing what the dataset contains and what it can be used for.</p>
       </div>
       <div class="col-md-6">
         <img src="../../imgs/primer/Landingpage Responsive Showcase.png" alt="Primer"/>
@@ -26,32 +26,32 @@ permalink: projects/primer/
       </div>
       <div class="col-md-12">       
         <h3>Background</h3>
-        <p>The majority of Socrata’s business centers around helping governments publish public data to the web in the form of interactive datasets. The notion of a dataset has been around for as long as the company has, circa 2007, and the design of the interactive dataset page has changed little since then.</p>
+        <p>The majority of Socrata’s business centers around helping governments publish public data to the web in the form of interactive datasets. The notion of a dataset had been around for as long as the company itself, circa 2007, and the design of the interactive dataset page had changed little since then.</p>
         <img src="../../imgs/primer/911_incidents_dataset_seattle.png" alt="911 Incidents Dataset from City of Seattle's data portal"/>
         <span class="caption">An example of the old dataset page from <a href="https://data.seattle.gov/">City of Seattle’s open data portal</a></span>
       </div>
       
       <div class="col-md-12">
-        <p>The old design and implementation has several issues:
+        <p>The old design and implementation had several issues:
           <ul>
-            <li class="list">The page is overwhelming and does not have a clear call to action</li>
-            <li class="list">The visual design is extremely outdated</li>
-            <li class="list">The performance of the page is extremely poor, especially for large datasets</li>
-            <li class="list">It’s barely useable on a mobile device</li>
-            <li class="list">Our competitors provide more attractive and usable options for the same feature set</li>
+            <li class="list">The page was overwhelming and didn't have a clear call to action</li>
+            <li class="list">The visual design was extremely outdated</li>
+            <li class="list">The performance of the page was extremely poor, especially for large datasets</li>
+            <li class="list">It was barely usable on a mobile device</li>
+            <li class="list">Our competitors provided more attractive and usable options for the same feature set</li>
           </ul>
         </p>
       </div>
       
       <div class="col-md-12">
-        <p>Another issue with the dataset page is that the range of people and use cases it’s trying to serve is way too broad. For example: it’s expected that a government employee can use the dataset page to create a chart or graph, a civic minded developer should be able to find an API endpoint to use for his latest project, and a small business owner should easily be able to figure out if her business permit got approved or not. Right now, all of these people are directed to the same page. This resulted in an inefficient interface that served none of our core users particularly well, as it’s not being optimized for any particular persona.</p>
+        <p>Another issue with the dataset page was that the range of people and use cases it was trying to serve was way too broad. For example: it was expected that a government employee could use the dataset page to create a chart or graph, a civic minded developer should be able to find an API endpoint to use for his latest project, and a small business owner should easily be able to figure out if her business permit got approved or not. In the old design, all of these people are directed to the same page. This resulted in an inefficient interface that served none of our core users particularly well, as it wasn't being optimized for any particular persona.</p>
       </div>
     </div> <!-- /row -->
 
     <div class="row">
       <div class="col-md-12">
         <h3>Problem Definition & Goals</h3>
-        <p>Using previous research conducted by our user research team, we knew that the users that typically visit our customer sites are roughly distributed in the following way:</p>
+        <p>Based on previous research conducted by our user research team, I knew that the users that typically visit our customer sites are roughly distributed in the following way:</p>
       </div>
       <div class="col-md-6">
           <ul>
@@ -70,7 +70,7 @@ permalink: projects/primer/
 
     <div clas="row">
       <div class="col-md-12">
-        <p>Through this research I recognized that there were a wide variety of use cases that needed to be accounted for, but needed to design a solution that did not fall in the trap of the old page, where one page was trying to be the final destination for all. I decided to strive to make the page less of a destination, and more of a stop along the way. This decision provided the basis for the project objective that I communicated across teams and leadership:
+        <p>Through this research I recognized that there were a wide variety of use cases that needed to be accounted for, but needed to design a solution that did not fall in the trap of the old page, where one page was trying to be the final destination for all. I decided to strive to make the page less of a destination, and more of a guiding stop along the way. This decision provided the basis for the project objective that I communicated across teams and leadership:
           <p>
             <span class="quote">"Build a central page that serves as an <strong>introduction and hub</strong> for interacting with a dataset that clearly tells the user that they are on the right path. The page provides a <strong>curated view of all information about the dataset</strong>, brings together child and related assets—such as visualizations, stories, similar datasets, apps, and external resources—, and <strong>guides the users to primary actions</strong> that help them get value from the data.”</span>
           </p>
@@ -101,14 +101,18 @@ permalink: projects/primer/
       </div>
 
       <div class="col-md-12">
-        <p>In order to get started on the page design, I took inventory of all the essential pieces of information on the old page, and added to the list any information needed to the user questions we identified during the design process.</p>
+        <p>In order to get started on the page design, I took inventory of all the essential pieces of information on the old page, and added to the list any information needed to answer any of the user questions identified during the earlier design process.</p>
         <p>In collaboration with members of our design and research team I then prioritized the importance of each piece of information, and used this to inform the visual hierarchy of the page.</p>
+
         <img src="../../imgs/primer/UI_initial_sketches.jpg" alt="Initial sketches for layouts, trying to think mobile first"/>
         <span class="caption">Initial thoughts on layouts, trying to think mobile first</span>
+
         <p>After a few iterations on paper, it was clear that I needed higher fidelity to ensure the hierarchy of information corresponded to our defined questions. For example, for people to be able to answer the question “Is this the right data?” I made sure that the title and description carried the most visual weight, but I also included a section that was called “What’s in this dataset” that lists each column with a description. This makes it easy to at a glance see if this data will contain the information you’re looking for.</p>
+
         <img src="../../imgs/primer/primer_mockup.png" alt="Starting with black and white low fidelity mockups to get the visual hierarchy right"/>
         <span class="caption">Starting with black and white low fidelity mockups to get the visual hierarchy right</span>
-        <p>After many iterations and internal design reviews, I picked what I thought was the best one so far, and got on the phone with customers. Having gone digital here really helped, as most of our customers aren’t local to Seattle, and doing a screenshare is the quickest and cheapest way to get some feedback.</p>
+
+        <p>After many iterations and internal design reviews, I picked what I thought was the best one so far, and got on the phone with customers. Having gone digital here really helped, as most of Socrata's customers aren’t local to Seattle, and doing a screenshare was the quickest and cheapest way to get some feedback.</p>
         <p>After an initial round of customer feedback, it turned out that the ability to customize content on the page was hugely important to customers, as well as being able to hide metadata that wasn’t filled out.</p>
       </div>
 
@@ -116,7 +120,7 @@ permalink: projects/primer/
         <h3>High Fidelity Design</h3>
         <p>With the changes from the customer feedback sessions incorporated, my high fidelity designs ended up touching on the goals of answering peoples' questions in the following way:
           <ol>
-            <li class="list"><strong>Is this the right data?</strong> - Prominent title and description, about section with all relevant metadata, summary of columns with descriptions, preview of data table or map features.</li>
+            <li class="list"><strong>Is this the right data?</strong> - Prominent title and description. About-section with all relevant metadata. Summary of columns with descriptions. Preview of data table or map features.</li>
             <li class="list"><strong>How do I do something with the data?</strong> - Key frequent actions, readily available on the top right for easy and quick access for the repeat user, but not too prominent as they cater to a smaller part of the audience. Call to action next to table to explore further.</li>
             <li class="list"><strong>What’s this data used for right now?</strong> Featured content related to the data customizable by the customer, prominent and visually engaging, but with the customer in full control of the content. More automatically related content further down the page.</li>
           </ol>
@@ -128,7 +132,7 @@ permalink: projects/primer/
 
       <div class="col-md-12">
         <h3>Development</h3>
-        <p>Developing this feature was a lot of fun. In place of high fidelity mockups, I created a responsive, interactive prototype using HTML, CSS and JavaScript, to show the visual design and behaviors of each feature. The engineers on the team exclusively used the prototype complimented by written acceptance criteria as their specifications. This really minimized the time we spent on correcting the regular little things that come up, such as font sizes, margins and paddings, as it was all available in the browser for them to inspect.</p>
+        <p>Developing this feature was a lot of fun. In place of static high fidelity mockups, I created a responsive, interactive prototype using HTML, CSS and JavaScript. The engineers on the team used the prototype complimented by written acceptance criteria as their specifications. This was a really effective way to communicate interactions and detailed visual design. It also really minimized the time we spent on correcting the regular little things that come up, such as font sizes, margins and paddings, as it was all available in the browser for them to inspect.</p>
 
         <div class="video embed-responsive embed-responsive-16by9"> 
           <iframe src="https://player.vimeo.com/video/201804269?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
