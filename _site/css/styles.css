@@ -310,7 +310,9 @@ ul > li.list {
       padding-bottom: 1.5em; }
     @media (min-width: 992px) {
       .project-content .customer-quotes .quote {
-        min-height: 150px; } }
+        min-height: 150px; }
+      .project-content .customer-quotes .quote.short {
+        min-height: 95px; } }
     .project-content .customer-quotes .quote {
       font-size: 1.4rem;
       color: #535b5c;

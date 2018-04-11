@@ -25,7 +25,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- Custom CSS -->
-    <link href="http://127.0.0.1:4000/css/styles.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,6 +33,25 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '204919110289974');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=204919110289974&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
 
 </head>
 
@@ -89,7 +108,7 @@
       
       <div class="col-md-6">
         <h3>Summary</h3>
-        <p>Data Lens is a lightweight business intelligence tool for understanding the shape and attributes of a dataset. I helped design the product that makes it possible for our customers to visualize any data, in any schema and size, and with minimal human effort, present you with a useful display of information. Data Lens enables Socrata customers to increase the quality of their published data, as well as make simple analysis of large amounts of data available to more people within the government.</p>
+        <p>Data Lens is a lightweight business intelligence tool for understanding the shape and attributes of a dataset. I helped design the product that makes it possible for our customers to visualize any data, in any schema and size, and with minimal human effort, present you with a useful display of information. Data Lens enables Socrata's customers to increase the quality of their published data, as well as make simple analysis of large amounts of data available to more people within the government.</p>
       </div>
       <div class="col-md-6">
         <img src="../../imgs/data_lens/data_lens.png" alt="Data Lens"/>
@@ -100,12 +119,12 @@
     <div class="row">
       <div class="col-md-12">  
         <h3>My Role</h3>
-        <p>During my time working on this project, I transitioned from being a contributing designer to being fully responsible for the end-to-end product experience. I took part in the initial ideation phase, then co-managed the backlog of features and user stories that were developed in close collaboration with engineering. I also developed, ran, and analyzed the results of several research efforts that affected the design and direction of the product.</p>
+        <p>During my time working on this project, I transitioned from being a contributing designer to being fully responsible for the end-to-end product experience. Apart from creating typical design deliverables, I took part in the initial ideation phase, then co-managed the backlog of features and user stories that were developed in close collaboration with engineering. I also designed, ran, and analyzed the results of several research efforts that affected the design and direction of the product.</p>
       </div>
       
       <div class="col-md-6">
         <img src="../../imgs/data_lens/nyc_gridview.png" alt="Old dataset page on NYC's website"/>
-        <span class="caption">The old tabular experience for viewing data. This used to be the default experience for viewing 311 Service Requests on <a href="https://data.cityofnewyork.us">NYC Open Data</a></span>
+        <span class="caption">The old tabular experience for viewing a dataset, in this case - 311 Service Requests from the <a href="https://data.cityofnewyork.us">NYC Open Data portal</a></span>
       </div>
 
       <div class="col-md-6">
@@ -117,12 +136,11 @@
         <p>The other complaint was the fact that the default experience for any given dataset is to view it as a data grid, something that is less useful the larger the dataset. Scrolling through rows and rows of data only tells you so much about what the dataset contains in its entirety and the quality of the data therein.</p>
 
         <h3>Project Goals</h3>
-        <p>At this point in time, Socrata did not have the mature product management organization it does today. This meant that the goals of the project were mainly driven by anecdotal stories from sales and other people in the field, as well as from the engineering organization itself.</p> 
-
-        <p>Basically the goal was defined as designing a product that does the following:
+        <p>The goal of Data Lens was defined as designing a product that does the following:
           <ul>
             <li class="list">Makes it easier to get a sense of what a multi million row dataset actually contains</li>
-            <li class="list">Gives you an idea of the quality and consistency of the dataset contents</li>
+            <li class="list">Gives you an idea of the quality and consistency of the data</li>
+            <li class="list">Answer basic questions using the data</li>
             <li class="list">Minimizes the amount of human skill and effort needed to do the above</li>
           </ul>
         </p>
@@ -153,7 +171,7 @@
       </div>
       <div class="col-md-6">
         <img src="../../imgs/data_lens/data_lens_wires.png" alt="Wireframes"/>
-        <span class="caption">Mid-fidelity wireframes (not my artifact)</span>
+        <span class="caption">Mid-fidelity wireframes</span>
       </div>
 
       <div class="col-md-4">
@@ -166,54 +184,54 @@
       </div>
       <div class="col-md-4">
         <img src="../../imgs/data_lens/usability_test_results2.png" alt="Time on task from usability test"/>
-        <span class="caption">Results from the benchmarking study showing time on task. You can see how task 2 had a long tail of people taking a long time? It was because the search box was hard to find.</span>
+        <span class="caption">Results from the benchmarking study showing time on task. You can see how task 2 had a long tail of people taking a long time? It was because the search box was hard to find. In later designs we moved the search box to a more conservative position.</span>
       </div>
 
       <div class="col-md-4">
         <img src="../../imgs/data_lens/data_lens_sketches2.png" alt="Timeline sketch"/>
-        <span class="caption">A feature from birth to production. Starting with sketches on paper... </span>
+        <span class="caption">From idea to production. Sketches on paper... </span>
       </div>
       <div class="col-md-4">
         <img src="../../imgs/data_lens/data_lens_requirements.png" alt="Acceptance Criteria"/>
-        <span class="caption">... then writing detailed specs for the devs to follow...</span>
+        <span class="caption">... evolves into detailed specs for the devs to follow...</span>
       </div>
       <div class="col-md-4">
         <img src="../../imgs/data_lens/data_lens_production.png" alt="Production feature"/>
-        <span class="caption">... eventually it makes it to production!</span>
+        <span class="caption">... that then becomes the real thing!</span>
       </div>
 
       <div class="col-md-12">
         <h3>Challenges</h3>
-        <p>This is one of the the most complex product development projects I’ve ever worked on, and I was thankful that I have at least an academic background in software engineering. As we were designing we had continuous discussions and negotiations with senior engineers and architects. Being able to speak the same language around any technical constraints and opportunities made it easier for us to design and deliver system that would accommodate datasets of any size in a performant way.</p>
+        <p>This is one of the the most complex product development projects I’ve ever worked on, and I was thankful to have an academic background in software engineering. As we were designing we had continuous discussions and negotiations with senior engineers and architects. Being able to speak the same language regarding any technical constraints or opportunities made it easier for us to design and deliver a system that would accommodate datasets of any size in a performant way.</p>
 
         <p>The other challenging part of this project was the breadth of data that needed to be supported. Typically, if you are designing a data visualization experience, like an infographic or a dashboard, you know the subject of the data, and probably even the exact set of attributes and types found in the data. Not so for Data Lens, here we had to accommodate any data possible, not matter shape and size. Our approach here was to go through hundreds of the datasets our customers had already uploaded, and analyze the schema of each one. To do this we used a prototype that my colleague had written that took in real data, and after categorizing the columns, it would render an interactive experience similar to the one we were aiming for.</p>
         <img src="../../imgs/data_lens/data_lens_prototype.png" alt="The data testing prototype"/>
         <span class="caption">The prototype that helped us figure out how to deal with many different schemas</span>
-     
       </div> 
+
       <div class="col-md-6">
         <h3>Results</h3>
-        <p>We ended up shipping a product that made it really easy to gain basic insights. The strengths of Data Lens lay in the fact that you never have to start from scratch, and the low technical bar needed to perform advanced roll ups and filters. The interface always suggests a few visualizations as a starting point, and data is automatically rolled up. Filtering is as simple as clicking any part of a visualization and it will filter the entire page. With a little bit more effort of customizing your page, you can end up with a tailored information experience that makes it easy to answer basic questions.</p>
+        <p>We ended up shipping a product that made it really easy to gain basic insights. It tested really well in the usability and benchmarking studies with a successrate that was 22% higher than its competitor.</p>
+        <p>
+        The strengths of Data Lens lay in the fact that you never have to start from scratch, and the low technical bar needed to perform advanced roll ups and filters to answer questions. The interface always suggests a few visualizations as a starting point, and data is automatically rolled up. Filtering is as simple as clicking any part of a visualization and it will filter the entire page. With a little bit more effort of customizing your page, you can end up with a tailored information experience that makes it easy to answer basic questions.</p>
       </div>
       <div class="col-md-6">
         <img src="../../imgs/data_lens/queens_2014-2017.png" alt="The shipped version of Data Lens"/>
-        <span class="caption">The shipped version. Showing a state where someone has applied a filter to only look at requests in Queens between 2014 and 2017</span>
+        <span class="caption">The shipped version. Showing a state where someone has applied a filter to only look at service requests in Queens between 2014 and 2017</span>
       </div>
 
       <div class="col-md-12">
         <p>In general, our customers’ initial responses to the product were positive:</p>
         <div class="customer-quotes">
           <div class="col-md-4">
-            <span class="quote">“"For basic analysis this is a big improvement"</span> 
-            <span class="caption">- Survey respondent</span>
+            <span class="quote short">"For basic analysis this is a big improvement"</span> 
           </div>
           <div class="col-md-4">
-            <span class="quote">"I have much less reason to look at the table, which I feel pretty good about"</span>
-            <span class="caption">- Customer</span>
+            <span class="quote short">"I have much less reason to look at the table, which I feel pretty good about"</span>
           </div>
           <div class="col-md-4">
-            <span class="quote">"Overall it's a really nice and clean interface. I'm impressed."</span> 
-            <span class="caption">- Usability Participant</span>
+            <span class="quote short">"Overall it's a really nice and clean interface. I'm impressed."</span> 
+            <span class="caption">- Customer quotes</span>
           </div>
         </div><!-- /.customer-quotes -->
 
@@ -228,15 +246,13 @@
 
         <h3>Iterations & Future Design</h3>
         <p>Motivated to solve the issues that were hindering the adoption of the product, I eventually became the lead designer for Data Lens and kicked off several projects to address the problems mentioned above.</p>
-
-        <p>My approach to the fact that the page didn’t visually fit with the rest of the product was aided by a [styleguide project|link…] started by myself and another designer. Using the new guidelines it was easier to put together a vision that aligned better with the overall look and feel of the Socrata platform.</p>
+        <p>My approach to the fact that the page didn’t visually fit with the rest of the product was aided by a styleguide project started by myself and another designer. Using the guidelines we had defined as part of that initiative, made it easier to put together a vision that aligned better with the overall look and feel of the Socrata platform.</p>
         <img src="../../imgs/data_lens/data_lens_future.png" alt="My vision for what Data Lens could look like"/>
         <span class="caption">My vision for what Data Lens could look like</span>
       </div>
 
       <div class="col-md-6">
         <p>I also put together a plan for how to make Data Lens work better on mobile. We had opted to de-prioritize this work in the first version due to time and resource constraints. One of my many learnings of this project is that unless you build a mobile responsive product from the start, you’ll have a really hard time finding the time to go back and do it later.</p>
-
         <p>These changes together with continued effort of expanding on the visualizations to make them as feature rich and customizable as Socrata’s legacy dataset visualization toolset would be the first steps to increased adoption.</p>
       </div>
       <div class="col-md-6">
@@ -246,8 +262,7 @@
 
       <div class="col-md-12">
         <h3>Sometimes, things don't go as planned</h3>
-        <p>At some point in time, looking at the usage data and the requests from customers that were still trickling in, we (product management, product design, engineering management) came to the conclusion that in order to make the changes we deemed necessary to get adoption to a place we were happy with, we would need to re-architect a rather large portion of the code-base. After carefully planning and laying out the transition between the current and the re-architected product, I was pulled off to go lead the efforts of a different area of the product that struggled with a really high value problem that had been prevalent for years. After I left the team, the re-architecture was unfortunately put on hold in favor of things with potentially higher ROI. While it was disappointing that most of my work never made it to production, I personally found it a valuable exercise in both visual design and project planning.</p>
-
+        <p>At some point in time, looking at the usage data and the requests from customers that were still trickling in, we (product management, product design, engineering management) came to the conclusion that in order to make the changes we deemed necessary to increase adoption, we would need to re-architect a rather large portion of the code-base. After carefully planning and laying out the transition between the current and the re-architected product, I was pulled off to go lead the efforts of a different area of the product that struggled with a really high value problem that had been prevalent for years. After I left the team, the re-architecture was unfortunately put on hold in favor of things with potentially higher ROI. While it was disappointing that most of that work never made it to production, I personally found it a valuable exercise in both visual design and project planning.</p>
       </div>
       
     </div> <!-- /row -->    
@@ -256,7 +271,7 @@
 				<span class="glyphicon glyphicon-menu-left"></span>
 				Previous Project
 			</a>
-			<a href="../../projects/plan_of_the_day" class="btn btn-lg btn-primary next">
+			<a href="../../projects/climbing" class="btn btn-lg btn-primary next">
 				Next Project
 				<span class="glyphicon glyphicon-menu-right"></span>
 			</a>

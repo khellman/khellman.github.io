@@ -25,7 +25,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- Custom CSS -->
-    <link href="http://127.0.0.1:4000/css/styles.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,6 +33,25 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '204919110289974');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=204919110289974&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
 
 </head>
 
@@ -113,11 +132,17 @@
                       </a>
                     </div>
                     <div class="col-sm-6 col-md-4">
+                      <a href="projects/climbing" class="thumbnail">
+                        <img src="../imgs/homepage/climbing.png" alt="Climbing">
+                        <h4 class="img-caption">Climbing Data</h4>
+                      </a>
+                    </div>
+<!--                     <div class="col-sm-6 col-md-4">
                       <a href="projects/plan_of_the_day" class="thumbnail">
                         <img src="../imgs/homepage/plan_of_the_day.png" alt="Plan of the Day">
                         <h4 class="img-caption">Plan of the Day</h4>
                       </a>
-                  </div>
+                  </div> -->
                 </div>
             </div>
         </div>
