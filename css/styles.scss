@@ -122,7 +122,6 @@ ul > li.list {
   display: inline-block;
   margin: 20px 40px;
   font-family: 'Josefin Sans', sans-serif;
-
 }
 
 .caption {
@@ -438,6 +437,9 @@ ul > li.list {
       }
       .quote.short {
         min-height: 95px;
+      }
+      .quote.single-quote{
+        min-height: unset;
       }
     }
     .quote {

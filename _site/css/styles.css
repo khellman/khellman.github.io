@@ -312,7 +312,9 @@ ul > li.list {
       .project-content .customer-quotes .quote {
         min-height: 150px; }
       .project-content .customer-quotes .quote.short {
-        min-height: 95px; } }
+        min-height: 95px; }
+      .project-content .customer-quotes .quote.single-quote {
+        min-height: unset; } }
     .project-content .customer-quotes .quote {
       font-size: 1.4rem;
       color: #535b5c;
